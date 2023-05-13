@@ -7,7 +7,7 @@ import sys
 import time
 
 parser = argparse.ArgumentParser(
-    description="Slowloris, low bandwidth stress test tool for websites"
+    description="0xDDOS, low bandwidth stress test tool for websites"
 )
 parser.add_argument("host", nargs="?", help="Host to perform stress test on")
 parser.add_argument(
@@ -219,7 +219,7 @@ def main():
         try:
             slowloris_iteration()
         except (KeyboardInterrupt, SystemExit):
-            logging.info("Stopping Slowloris")
+            logging.info("Stopping 0xDDOS")
             break
         except Exception as e:
             logging.debug("Error in Slowloris iteration: %s", e)
